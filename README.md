@@ -1,5 +1,10 @@
 # Astro Starter Kit: Basics
 
+Résumé minimalista maquetado para web y pdf
+Esquema del JSON de CV de jsonresume.org
+
+Basado en el diseño de Bartosz Jarocki
+
 ```sh
 npm create astro@latest -- --template basics
 ```

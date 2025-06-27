@@ -1,34 +1,29 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full Stack Developer con más de 15 años de experiencia & Creador de Contenido de Programación",
-    "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
+    "name": "Marlon Torres",
+    "label": "Web Developer ",
+    "image": "../public/cv-picture.jpg",
+    "email": "marlon.dt@hotmail.com",
+    "phone": "+34 667953850",
     "url": "https://midu.dev",
-    "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+    "summary": "Desarrollador Front-End. He estudiado grado superior en Desarrollo de Aplicaciones Web. Con una clara vocación por el desarrollo del lado del cliente. Experiencia práctica en maquetación y desarrollo de componentes durante mis prácticas profesionales.",
     "location": {
       "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
+      "postalCode": "28400",
+      "city": "Collado Villalba, Madrid",
       "countryCode": "ES",
       "region": "España"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
+        "username": "Marlon Torres",
+        "url": "https://linkedin.com/in/marlon-torres-4225502b0"
       },
       {
         "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "Marlon Torres",
+        "url": "https://github.com/marlondt-dev"
       }
     ]
   },

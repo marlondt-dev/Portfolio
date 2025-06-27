@@ -1,0 +1,127 @@
+---
+import {basics} from '@cv'
+import Section from '@/components/Section.astro'
+import Mail from 'icons/Mail.astro'
+import Phone from 'icons/Phone.astro'
+import GitHub from 'icons/GitHub.astro'
+import LinkedIn from 'icons/LinkedIn.astro'
+import WorldMap from 'icons/WorldMap.astro'
+
+const {name, label, image, email, url, summary, location, phone, profiles} = basics
+const {address, postalCode, city, countryCode, region} = location
+
+const SOCIAL_ICONS: Record<string, any> = {
+LinkedIn,
+GitHub
+}
+---
+
+<Section>
+    <div class="container">
+        <div class="info">
+            <h1>{name}</h1>
+            <h2>{label}</h2>
+            <span><WorldMap />
+                 {city}, {region}
+                </span>
+            <footer>
+                {
+                    email &&  
+                    <a href={`mailto:${email}`} title={`Enviar correo electronico a ${name} al correo ${email}`} target="_blank" rel="noopener noreferrer"> 
+                    <Mail / ></a>
+                    
+                }
+                {
+                    phone && 
+                    <a href={`tel:${email}`} title={`Enviar Llamar a ${name} al número ${phone}`} target="_blank" rel="noopener noreferrer"> 
+                    <Phone / ></a>
+                    
+                }
+
+                {
+                    profiles.map(({network, username, url}) => {
+                        const Icon = SOCIAL_ICONS[network]
+
+                        return (
+                        <a href={url} title={`Visitar ${username} en ${network}`} target="_blank" rel="noopener noreferrer"><Icon /></a>
+                    )
+
+                    })
+                }
+                
+            </footer>
+        </div>
+        <figure>
+             <img src={image} alt={name} /> 
+        </figure>
+    </div>
+</Section>
+
+<style>
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding-right: 32px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0
+}
+h2 {
+    color: #333;
+    font-weight: 500;
+    text-wrap: balance;
+    font-size: 0.7rem;
+    margin: 0;
+    
+}
+
+img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 70px;
+    border-radius: 15px;
+}
+span {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.55rem;
+    letter-spacing: -0.05rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+footer a {
+    color: #777;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #eee;
+    padding: 4px;
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    background: #eee;
+}
+</style>
