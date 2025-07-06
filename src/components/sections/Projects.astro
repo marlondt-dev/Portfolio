@@ -1,6 +1,112 @@
-
 ---
-import Section from "../Section.astro"
+import Section from "../Section.astro";
+import { projects } from "@cv";
 ---
 
-<Section title="Projects"></Section>
+<Section title="Proyectos">
+  <ul>
+    {
+      projects.map(({ name, url, description, highlights, isActive }) => {
+        return (
+          <li>
+            <article>
+              <header>
+                <h3>
+                <a href={`${url}`} title={ `Ir al proyecto ${name}`} target="_blank">
+                 {name}
+                </a>
+                {
+                  isActive && <span>&bull;</span>
+                }
+                </h3>
+                <p>{description}</p>
+              </header>
+              <footer>
+                
+                    {
+                        highlights.map((highlight) => {
+                            return (
+                                <span>{highlight}</span>
+                            )
+                        })
+                    }
+                
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>
+
+<style>
+    ul {
+        margin-top: 0.5em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.8em;
+    }
+
+    span {
+        font-size: 0.6em;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1em;
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        padding: 0.24em;
+        height: 100%;
+        padding: 0.8em 0.6em;
+        
+    }
+
+    article header {
+      flex: 1;
+    }
+
+    article a {
+      color: #111;
+    }
+
+    article a:hover {
+      text-decoration: underline;
+    }
+
+    article h3 {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5em;
+      
+    }
+
+
+    article h3 span {
+      color: rgb(3, 178, 82);
+      font-size: 1em;
+      
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4em;
+    }
+
+    footer span {
+        background-color: #eee;
+        padding: 0.3em 0.7em;
+        border-radius: 2px;
+        color: #444;
+        font-weight: 500;
+        font-size: 0.4em;
+    }
+
+
+     article p {
+      font-size: 0.5em;
+      line-height: 1.4em;
+     }
+</style>

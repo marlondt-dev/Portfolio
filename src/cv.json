@@ -2,7 +2,7 @@
   "basics": {
     "name": "Marlon Torres",
     "label": "Web Developer ",
-    "image": "../public/cv-picture.jpg",
+    "image": "../cv-picture.jpg",
     "email": "marlon.dt@hotmail.com",
     "phone": "+34 667953850",
     "url": "https://midu.dev",
@@ -29,33 +29,33 @@
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Divulgador sobre Programación Web",
+      "name": "Alebat",
+      "position": "Desarrollador Front-End",
       "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
-      "endDate": null,
-      "summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
+      "startDate": "2025-02-25",
+      "endDate": "2025-06-05",
+      "summary": "Desarrollo, mejora y mantenimiento de interfaces web para el proyecto principal, garantizando rendimiento y experiencia de usuario óptimos. Creación y reutilización de componentes modulares con Vue 3 (Composition API) y Nuxt, siguiendo buenas prácticas de arquitectura.",
       "highlights": [
         "Started the company"
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
+      "name": "Webhelp Enterprises",
+      "position": "Agente del servicio de atención al cliente",
       "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
+      "startDate": "2017-01-01",
+      "endDate": "2017-09-01",
+      "summary": "Atención al cliente, venta y gestión de billetes para la aerolínea VOLARIS, gestión de sistemas CRM y resolución proactiva de incidencias",
       "highlights": [
         "Started the company"
       ]
     },
     {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
+      "name": "Sykes Enterprises",
+      "position": "Atención al cliente PlayStation",
+      "startDate": "2014-03-09",
+      "endDate": "2016-02-01",
+      "summary": "Soporte técnico para resolución de incidencias de productos PlayStation, atención al cliente con incidencias relacionadas con cuentas en línea como recuperación de contraseña, reembolsos, etc.",
       "highlights": [
         "Started the company"
       ]
@@ -168,14 +168,28 @@
       ]
     },
     {
-      "name": "Next.js",
+      "name": "Nuxt.js",
       "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
       ]
     },
     {
-      "name": "React",
+      "name": "Vue.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "Astro",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "Sass",
       "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
@@ -205,14 +219,35 @@
   }],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "Clon de Twitch",
       "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "description": "Clon de la página de streamings en directo de Twitch usando la api de Twitch",
       "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
+        "streamings en directo",
+        "Nuxt.js y TypeScript",
+        "Api de Twitch"
       ],
-      "url": "https://mars.codes"
+      "url": "https://my-twitch-clone-tide.vercel.app/"
+    },
+    {
+      "name": "Blog de café",
+      "isActive": true,
+      "description": "Página web de un blog de café, donde se pueden ver las últimas entradas y sus comentarios",
+      "highlights": [
+        "Solamente con HMTL y CSS",
+        "Páginas de nosotros, cursos y contacto"
+      ],
+      "url": "https://marlon-blogde-cafe.netlify.app"
+    },
+    {
+      "name": "Clon de Twitch",
+      "isActive": true,
+      "description": "Clon de la página de twitch",
+      "highlights": [
+        "Poder ver los streamings en directo",
+        "técnologías como Nuxt.js y TypeScript"
+      ],
+      "url": "https://my-twitch-clone-tide.vercel.app/"
     },
     {
       "name": "AdventJS",
@@ -224,47 +259,6 @@
         "JavaScript & TypeScript"
       ],
       "url": "https://adventjs.dev"
-    },
-    {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
-      "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
-      ],
-      "url": "https://codember.dev"
-    },
-    {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
-      "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
-      ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": [
-        "100% gratuito",
-        "+500 soluciones de la comunidad"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-      "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
-      ],
-      "url": "https://miduconf.com"
     }
   ]
 }
