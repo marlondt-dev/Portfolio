@@ -7,7 +7,7 @@ import { work } from "@cv";
   <ul>
     {
       work.map(
-        ({ name, position, startDate, endDate, summary, highlights }) => {
+        ({ name, position, startDate, endDate, summary, highlights, url }) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : "Actual";
@@ -17,7 +17,7 @@ import { work } from "@cv";
               <article>
                 <header>
                   <div>
-                    <h3>{name}</h3>
+                    <h3><a href={url} title={`Ver ${name}`} target="_blank">{name}</a></h3>
                     <h4>{position}</h4>
                   </div>
                   <time>{years}</time>
@@ -38,7 +38,7 @@ import { work } from "@cv";
     ul {
         display: flex;
         flex-direction: column;
-        gap: 0.5em;
+        gap: 1.5em;
         margin-top: 0.5em;
     }
 
@@ -49,8 +49,17 @@ import { work } from "@cv";
 
     article h4 {
         color: #222;
-        font-wait: 400;
+        font-weight: 400;
     }
+
+    article a {
+    color: #111;
+  }
+
+
+    article a:hover {
+    text-decoration: underline;
+  }
 
     header {
         display: flex;
@@ -59,8 +68,15 @@ import { work } from "@cv";
         margin-bottom: 4px;
     }
 
-    h4 {
-        font-size: 0.7rem;
-    }
-   
+     time {
+    color: #555;
+    font-size: 0.85rem;
+    min-width: 102px;
+    cursor:default;
+  }
+
+  footer p {
+    margin: 0;
+  }
+    
 </style>

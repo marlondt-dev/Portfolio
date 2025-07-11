@@ -14,6 +14,13 @@ const SOCIAL_ICONS: Record<string, any> = {
 LinkedIn,
 GitHub
 }
+
+const linkedInInfo = profiles.find(profile => profile.network === 'LinkedIn')
+const linkedInUrl = linkedInInfo?.url
+
+const printInfo = [email, phone, linkedInUrl]
+    .filter(Boolean)
+    .join(' • ')
 ---
 
 <Section>
@@ -25,6 +32,12 @@ GitHub
                  {city}, {region}
                 </span>
             <footer>
+                <div class="print">
+                    {printInfo}
+                </div>
+                </footer>
+                <footer class="no-print">
+                
                 {
                     email &&  
                     <a href={`mailto:${email}`} title={`Enviar correo electronico a ${name} al correo ${email}`} target="_blank" rel="noopener noreferrer"> 
@@ -48,7 +61,6 @@ GitHub
 
                     })
                 }
-                
             </footer>
         </div>
         <figure>
@@ -70,12 +82,12 @@ GitHub
 .info {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.4rem;
     padding-right: 32px;
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 0;
     color: #092241;
 }
@@ -83,7 +95,7 @@ h2 {
     color: #303537;
     font-weight: 500;
     text-wrap: balance;
-    font-size: 0.7rem;
+    font-size: 1.1rem;
     margin: 0;
     
 }
@@ -91,38 +103,56 @@ h2 {
 img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    width: 70px;
+    width: 100px;
     border-radius: 15px;
 }
 span {
     color: #666;
     display: flex;
     align-items: center;
-    gap: 0.25rem;
-    font-size: 0.55rem;
+    gap: 0.65rem;
+    font-size: 0.85rem;
     letter-spacing: -0.05rem;
 }
 
 footer {
+    color: #666;
+    font-size: 0.65em;
     display: flex;
     flex-direction: row;
-    gap: 0.2rem;
-    margin-top: 0.5rem;
+    gap: 0.4rem;
+    margin-top: 0.2rem;
 }
 
 footer a {
     color: #777;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     border: 1px solid #eee;
     padding: 4px;
-    height: 21px;
-    width: 21px;
+    height: 32px;
+    width: 32px;
     border-radius: 6px;
     transition: all 0.3s ease;
 }
 
 footer a:hover {
     background: #eee;
+}
+
+.print {
+    display: none !important;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
+@media print {
+    .print {
+        display: flex !important;
+    }
 }
 </style>
