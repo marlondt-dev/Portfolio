@@ -75,10 +75,10 @@
   "education": [{
     "institution": "Universae",
     "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "FP Desarrollo de Aplicaciones Web",
+    "area": "Grado Superior en Desarrollo de Aplicaciones Web ",
     "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
+    "startDate": "2023-09-01",
+    "endDate": "2025-09-01",
     "score": "4.0",
     "courses": [
       "DB1101 - Basic SQL"
@@ -221,7 +221,7 @@
     {
       "name": "Clon de Twitch",
       "isActive": true,
-      "description": "Clon de la página de streamings en directo de Twitch usando la api de Twitch",
+      "description": "Clon de la página de streamings en directo de Twitch usando la api de Twitch ",
       "highlights": [
         "streamings en directo",
         "Nuxt.js y TypeScript",
