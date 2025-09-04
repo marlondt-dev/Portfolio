@@ -194,6 +194,12 @@
       "keywords": [
         "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
       ]
+    }, 
+    {
+      "name": "Java"
+    },
+    {
+      "name": "PHP"
     }
   ],
   "languages": [
@@ -223,9 +229,9 @@
       "isActive": true,
       "description": "Clon de la página de streamings en directo de Twitch usando la api de Twitch ",
       "highlights": [
-        "streamings en directo",
-        "Nuxt.js y TypeScript",
-        "Api de Twitch"
+        "Streamings en directo",
+        "Nuxt.js, Sass, HTML y TypeScript",
+        "Utilizando la Api de Twitch"
       ],
       "url": "https://my-twitch-clone-tide.vercel.app/"
     },
@@ -235,30 +241,9 @@
       "description": "Página web de un blog de café, donde se pueden ver las últimas entradas y sus comentarios",
       "highlights": [
         "Solamente con HMTL y CSS",
-        "Páginas de nosotros, cursos y contacto"
+        "Página de nosotros, cursos y contacto"
       ],
       "url": "https://marlon-blogde-cafe.netlify.app"
-    },
-    {
-      "name": "Clon de Twitch",
-      "isActive": true,
-      "description": "Clon de la página de twitch",
-      "highlights": [
-        "Poder ver los streamings en directo",
-        "técnologías como Nuxt.js y TypeScript"
-      ],
-      "url": "https://my-twitch-clone-tide.vercel.app/"
-    },
-    {
-      "name": "AdventJS",
-      "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
-      "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
-      ],
-      "url": "https://adventjs.dev"
     }
   ]
 }
