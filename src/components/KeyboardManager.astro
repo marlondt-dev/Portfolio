@@ -1,6 +1,7 @@
 ---
 import {basics} from '@cv'
 
+
 const {profiles} = basics
 
 const SOCIAL_ICONS: Record<string, any> = {
@@ -28,7 +29,7 @@ LinkedIn: `<svg
 >`
 }
 
-const profileInfo = profiles.map(({network, username, url}) => {
+const profileInfo = profiles.map(({network, url}) => {
     const icon = SOCIAL_ICONS[network]
 
 const firstLetter = network.charAt(0).toUpperCase();
@@ -47,7 +48,7 @@ const firstLetter = network.charAt(0).toUpperCase();
 
 ---
 
-<footer>Pulsa <kbd>Ctrl</kbd> + <kbd>K</kbd> para el comando de opciones</footer>
+<footer id="normal-footer">Pulsa <kbd>Ctrl</kbd> + <kbd>K</kbd> para el comando de opciones</footer>
 
 <ninja-keys data-info={JSON.stringify(profileInfo)}   placeholder="Buscar comando..." hideBreadcrumbs> 
 </ninja-keys>
@@ -93,6 +94,11 @@ ninja.data = [
         }
     }
 
+    @media (max-width: 700px) {
+       #normal-footer {
+        display: none !important;
+       }
+      }
     @keyframes fadeIn{
       from {opacity: 0;}
       to   {opacity: 1;}

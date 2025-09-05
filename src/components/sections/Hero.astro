@@ -8,7 +8,7 @@ import LinkedIn from 'icons/LinkedIn.astro'
 import WorldMap from 'icons/WorldMap.astro'
 
 const {name, label, image, email, url, summary, location, phone, profiles} = basics
-const {address, postalCode, city, countryCode, region} = location
+const  { city, region} = location
 
 const SOCIAL_ICONS: Record<string, any> = {
 LinkedIn,
@@ -78,14 +78,6 @@ const printInfo = [email, phone, linkedInUrl]
     gap: 1em;
 }
 
-
-.info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    padding-right: 32px;
-}
-
 h1 {
     font-size: 2em;
     margin: 0;
@@ -139,6 +131,27 @@ footer a {
 
 footer a:hover {
     background: #eee;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-right: 32px;
+}
+
+@media (max-width: 700px) {
+    .info {
+        padding-right: 0;
+        text-align: center;
+        align-items:center;
+    }
 }
 
 .print {
