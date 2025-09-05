@@ -5,6 +5,10 @@ Esquema del JSON de CV de jsonresume.org
 
 Basado en el diseño de Bartosz Jarocki
 
+
+<img width="1201" height="792" alt="image" src="https://github.com/user-attachments/assets/c176047a-ffaf-43a9-acc8-96b34b30b404" />
+
+
 ```sh
 npm create astro@latest -- --template basics
 ```
