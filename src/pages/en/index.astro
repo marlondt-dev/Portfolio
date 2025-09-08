@@ -1,6 +1,5 @@
 ---
-
-import Layout from '../layouts/Layout.astro';
+import Layout from '../../layouts/Layout.astro';
 import About from '@/components/sections/About.astro';
 import Education from '@/components/sections/Education.astro';
 import Experience from '@/components/sections/Experience.astro';
@@ -8,26 +7,23 @@ import Hero from '@/components/sections/Hero.astro';
 import Projects from '@/components/sections/Projects.astro';
 import Skills from '@/components/sections/Skills.astro';
 import KeyboardManager from '@/components/KeyboardManager.astro';
-import {basics} from '@cv'
 import { getCV } from '@/cv/utils';
 
-// const {name, label} = basics
-const currentLocale = Astro.currentLocale || 'es'
-const cv = getCV(currentLocale)
-const {name, label} = cv.basics
+const currentLocale = 'en';
+const cv = getCV(currentLocale);
+const { name, label } = cv.basics;
 ---
 
-<Layout title=`Portafolio de ${name} - ${label}`>
+<Layout title=`${name} Portfolio - ${label}`>
 	<main>
 		<Hero cv={cv}></Hero>
-		<About></About>
-		<Experience></Experience>
-		<Education></Education>
-		<Projects></Projects>
-		<Skills></Skills>
+		<About cv={cv}></About>
+		<Experience cv={cv}></Experience>
+		<Education cv={cv}></Education>
+		<Projects cv={cv}></Projects>
+		<Skills cv={cv}></Skills>
 	</main>
 	<KeyboardManager></KeyboardManager>
-
 </Layout>
 
 <style>
