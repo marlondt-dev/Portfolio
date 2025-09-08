@@ -1,0 +1,90 @@
+---
+const currentLocale = Astro.currentLocale || 'es';
+---
+<div class="print">
+<div class="language-selector">
+  <a 
+    href="/" 
+    class={currentLocale === 'es' ? 'active' : ''}
+    title="Cambiar a español"
+  >
+    ES
+  </a>
+  <a 
+    href="/en" 
+    class={currentLocale === 'en' ? 'active' : ''}
+    title="Switch to English"
+  >
+    EN
+  </a>
+</div>
+</div>
+
+<style>
+  .language-selector {
+    display: flex;
+    gap: 0.5rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+  }
+  
+  .language-selector a {
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #333;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .language-selector a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+  }
+  
+  .language-selector a.active {
+    background: #333;
+    color: white;
+    border-color: #333;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .language-selector a {
+      background: rgba(0, 0, 0, 0.3);
+      border-color: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+    
+    .language-selector a:hover {
+      background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .language-selector a.active {
+      background: white;
+      color: #333;
+      border-color: white;
+    }
+  }
+
+  @media (width <= 700px) {
+    .language-selector {
+      position: relative;
+      top: auto;
+      right: auto;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+  }
+
+  @media print {
+    .print {
+        display: none !important
+    }
+  }
+</style>
