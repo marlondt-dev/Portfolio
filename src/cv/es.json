@@ -1,0 +1,249 @@
+{
+  "basics": {
+    "name": "Marlon Torres",
+    "label": "Web Developer ",
+    "image": "../cv-picture.jpg",
+    "email": "marlon.dt@hotmail.com",
+    "phone": "+34 667953850",
+    "url": "https://midu.dev",
+    "summary": "Desarrollador Front-End. He estudiado grado superior en Desarrollo de Aplicaciones Web. Con una clara vocación por el desarrollo del lado del cliente. Experiencia práctica en maquetación y desarrollo de componentes durante mis prácticas profesionales.",
+    "location": {
+      "address": "",
+      "postalCode": "28400",
+      "city": "Collado Villalba, Madrid",
+      "countryCode": "ES",
+      "region": "España"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Marlon Torres",
+        "url": "https://linkedin.com/in/marlon-torres-4225502b0"
+      },
+      {
+        "network": "GitHub",
+        "username": "Marlon Torres",
+        "url": "https://github.com/marlondt-dev"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Alebat",
+      "position": "Desarrollador Front-End",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2025-02-25",
+      "endDate": "2025-06-05",
+      "summary": "Desarrollo, mejora y mantenimiento de interfaces web para el proyecto principal, garantizando rendimiento y experiencia de usuario óptimos. Creación y reutilización de componentes modulares con Vue 3 (Composition API) y Nuxt, siguiendo buenas prácticas de arquitectura.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Webhelp Enterprises",
+      "position": "Agente del servicio de atención al cliente",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2017-01-01",
+      "endDate": "2017-09-01",
+      "summary": "Atención al cliente, venta y gestión de billetes para la aerolínea VOLARIS, gestión de sistemas CRM y resolución proactiva de incidencias",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Sykes Enterprises",
+      "position": "Atención al cliente PlayStation",
+      "startDate": "2014-03-09",
+      "endDate": "2016-02-01",
+      "summary": "Soporte técnico para resolución de incidencias de productos PlayStation, atención al cliente con incidencias relacionadas con cuentas en línea como recuperación de contraseña, reembolsos, etc.",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "url": "https://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "Universae",
+    "url": "https://www.uoc.edu/portal/es/index.html",
+    "area": "Grado Superior en Desarrollo de Aplicaciones Web ",
+    "studyType": "Bachelor",
+    "startDate": "2023-09-01",
+    "endDate": "2025-09-01",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+      ]
+    },
+    {
+      "name": "Nuxt.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
+      ]
+    },
+    {
+      "name": "Vue.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "Astro",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "Sass",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    }, 
+    {
+      "name": "Java"
+    },
+    {
+      "name": "PHP"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [
+    {
+      "name": "Clon de Twitch",
+      "isActive": true,
+      "description": "Clon de la página de streamings en directo de Twitch usando la api de Twitch ",
+      "highlights": [
+        "Streamings en directo",
+        "Nuxt.js, Sass, HTML y TypeScript",
+        "Utilizando la Api de Twitch"
+      ],
+      "url": "https://my-twitch-clone-tide.vercel.app/"
+    },
+    {
+      "name": "Blog de café",
+      "isActive": true,
+      "description": "Página web de un blog de café, donde se pueden ver las últimas entradas y sus comentarios",
+      "highlights": [
+        "Solamente con HMTL y CSS",
+        "Página de nosotros, cursos y contacto"
+      ],
+      "url": "https://marlon-blogde-cafe.netlify.app"
+    }
+  ]
+}
