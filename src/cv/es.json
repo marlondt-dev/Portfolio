@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Marlon Torres",
-    "label": "Web Developer ",
+    "label": "Desarrollador Web ",
     "image": "../cv-picture.jpg",
     "email": "marlon.dt@hotmail.com",
     "phone": "+34 667953850",
-    "url": "https://midu.dev",
-    "summary": "Desarrollador Front-End. He estudiado grado superior en Desarrollo de Aplicaciones Web. Con una clara vocación por el desarrollo del lado del cliente. Experiencia práctica en maquetación y desarrollo de componentes durante mis prácticas profesionales.",
+    "url": "",
+    "summary": "Apasionado del desarrolloweb y amante de las buenas interfaces. Me formé en Desarrollo de Aplicaciones Web y desde entonces disfruto creando experiencias digitales modernas y funcionales. Tengo experiencia trabajando con HTML, CSS, JavaScript, TypeScript y frameworks actuales, desarrollando componentes reutilizables y cuidando cada detalle de la maquetación. Me encanta aprender, experimentar y afrontar nuevos retos que me ayuden a crecer como desarrollador",
     "location": {
       "address": "",
       "postalCode": "28400",
@@ -31,10 +31,10 @@
     {
       "name": "Alebat",
       "position": "Desarrollador Front-End",
-      "url": "https://twitch.tv/midudev",
+      "url": "https://alebateducation.com",
       "startDate": "2025-02-25",
       "endDate": "2025-06-05",
-      "summary": "Desarrollo, mejora y mantenimiento de interfaces web para el proyecto principal, garantizando rendimiento y experiencia de usuario óptimos. Creación y reutilización de componentes modulares con Vue 3 (Composition API) y Nuxt, siguiendo buenas prácticas de arquitectura.",
+      "summary": "Desarrollo, mejora y mantenimiento de interfaces web para el proyecto principal, garantizando rendimiento y experiencia de usuario óptimos. Creación y reutilización de componentes modulares con Vue.js, Nuxt, Sass, TypeScript, etc. Siguiendo buenas prácticas de arquitectura.",
       "highlights": [
         "Started the company"
       ]
@@ -42,7 +42,7 @@
     {
       "name": "Webhelp Enterprises",
       "position": "Agente del servicio de atención al cliente",
-      "url": "https://twitch.tv/midudev",
+      "url": "https://www.linkedin.com/company/webhelpamericas/?originalSubdomain=mx",
       "startDate": "2017-01-01",
       "endDate": "2017-09-01",
       "summary": "Atención al cliente, venta y gestión de billetes para la aerolínea VOLARIS, gestión de sistemas CRM y resolución proactiva de incidencias",
@@ -53,6 +53,7 @@
     {
       "name": "Sykes Enterprises",
       "position": "Atención al cliente PlayStation",
+      "utl": "https://foundever.com/",
       "startDate": "2014-03-09",
       "endDate": "2016-02-01",
       "summary": "Soporte técnico para resolución de incidencias de productos PlayStation, atención al cliente con incidencias relacionadas con cuentas en línea como recuperación de contraseña, reembolsos, etc.",
@@ -76,10 +77,10 @@
     "institution": "Universae",
     "url": "https://www.uoc.edu/portal/es/index.html",
     "area": "Grado Superior en Desarrollo de Aplicaciones Web ",
-    "studyType": "Bachelor",
+    "studyType": "FP",
     "startDate": "2023-09-01",
     "endDate": "2025-09-01",
-    "score": "4.0",
+    "score": "8.67",
     "courses": [
       "DB1101 - Basic SQL"
     ]

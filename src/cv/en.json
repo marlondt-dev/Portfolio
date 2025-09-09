@@ -6,7 +6,7 @@
     "email": "marlon.dt@hotmail.com",
     "phone": "+34 667953850",
     "url": "https://midu.dev",
-    "summary": "Front-End Developer. I have studied a Higher Degree in Web Application Development. With a clear vocation for client-side development. Practical experience in layout and component development during my professional internship.",
+    "summary": "Passionate web Developer and enthusiast of clean, user-friendly interfaces. I studied Web Application Development and have been enjoying building modern and functional digital experiences ever since. I have hands-on experience with HTML, CSS, JavaScript, TypeScript and modern frameworks, developing reusable components and focusing on pixel-perfect layouts. I love learning, experimenting, and taking on new challenges that help me grow as a developer.",
     "location": {
       "address": "",
       "postalCode": "28400",
@@ -31,10 +31,10 @@
     {
       "name": "Alebat",
       "position": "Front-End Developer",
-      "url": "https://twitch.tv/midudev",
+      "url": "https://alebateducation.com",
       "startDate": "2025-02-25",
       "endDate": "2025-06-05",
-      "summary": "Development, improvement and maintenance of web interfaces for the main project, ensuring optimal performance and user experience. Creation and reuse of modular components with Vue 3 (Composition API) and Nuxt, following good architecture practices.",
+      "summary": " Creation and reuse of modular components with Vue.js, Nuxt, Sass, TypeScript, etc.  Following good architecture practices.",
       "highlights": [
         "Started the company"
       ]
@@ -42,7 +42,7 @@
     {
       "name": "Webhelp Enterprises",
       "position": "Customer Service Agent",
-      "url": "https://twitch.tv/midudev",
+      "url": "https://www.linkedin.com/company/webhelpamericas/?originalSubdomain=mx",
       "startDate": "2017-01-01",
       "endDate": "2017-09-01",
       "summary": "Customer service, sales and ticket management for VOLARIS airline, CRM system management and proactive incident resolution",
@@ -53,6 +53,7 @@
     {
       "name": "Sykes Enterprises",
       "position": "PlayStation Customer Support",
+      "utl": "https://foundever.com/",
       "startDate": "2014-03-09",
       "endDate": "2016-02-01",
       "summary": "Technical support for resolving PlayStation product issues, customer service with online account-related issues such as password recovery, refunds, etc.",
