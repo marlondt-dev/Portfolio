@@ -32,6 +32,7 @@ export interface WorkExperience {
   endDate?: string;
   summary: string;
   highlights: string[];
+  url: string
 }
 
 export interface Education {
