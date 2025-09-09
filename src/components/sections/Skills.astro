@@ -1,10 +1,18 @@
 ---
 import Section from "../Section.astro"
 import {skills} from '@cv'
+import {getI18N } from '@/i18n/utils'
+
+interface Props {
+    locale?: string
+}
+const {locale = 'es'}: Props = Astro.props
+const i18n = getI18N(locale)
+const {sections} = i18n
 
 ---
 
-<Section title="Habilidades">
+<Section title={sections.skills}>
 
     <ul>
         {

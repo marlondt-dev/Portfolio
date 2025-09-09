@@ -1,0 +1,9 @@
+{
+    "sections": {
+        "about": "About me",
+        "education": "Education",
+        "experience": "Experience",
+        "projects": "Projects",
+        "skills": "Skills"
+    }
+}

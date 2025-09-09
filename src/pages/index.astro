@@ -20,11 +20,11 @@ const {name, label} = basics
 <Layout title=`Portafolio de ${name} - ${label}`>
 	<main>
 		<Hero cv={cv}></Hero>
-		<About cv={cv}></About>
-		<Experience cv={cv}></Experience>
-		<Education cv={cv}></Education>
-		<Projects cv={cv}></Projects>
-		<Skills></Skills>
+		<About cv={cv} locale={currentLocale}></About>
+		<Experience cv={cv} locale={currentLocale}></Experience>
+		<Education cv={cv} locale={currentLocale}></Education>
+		<Projects cv={cv} locale={currentLocale}></Projects>
+		<Skills cv={cv} locale={currentLocale}></Skills>
 	</main>
 	<KeyboardManager></KeyboardManager>
 

@@ -1,16 +1,20 @@
 ---
 import Section from "../Section.astro";
 import type {CV} from  '@/types/cv'
+import {getI18N } from '@/i18n/utils'
 
 interface Props {
-  cv: CV
+  cv: CV,
+  locale?: string
 }
 
-const {cv}: Props = Astro.props
+const {cv, locale = 'es'}: Props = Astro.props
 const { projects } = cv
+const i18n = getI18N (locale)
+
 ---
 
-<Section title="Proyectos">
+<Section title={i18n.sections.projects}>
   <ul>
     {
       projects.map(({ name, url, description, highlights, isActive }) => {
