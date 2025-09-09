@@ -1,6 +1,14 @@
 ---
 import Section from "../Section.astro";
-import { work } from "@cv";
+import type {CV} from '@/types/cv'
+
+interface Props {
+  cv: CV
+}
+
+const { cv }: Props = Astro.props;
+const { work } = cv;
+
 ---
 
 <Section title="Experiencia laboral">

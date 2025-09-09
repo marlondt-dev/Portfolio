@@ -1,8 +1,8 @@
 ---
 const currentLocale = Astro.currentLocale || 'es';
 ---
-<div class="print">
-<div class="language-selector">
+
+<div class="language-selector print">
   <a 
     href="/" 
     class={currentLocale === 'es' ? 'active' : ''}
@@ -18,7 +18,7 @@ const currentLocale = Astro.currentLocale || 'es';
     EN
   </a>
 </div>
-</div>
+
 
 <style>
   .language-selector {
