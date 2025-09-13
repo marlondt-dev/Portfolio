@@ -8,6 +8,7 @@ import Projects from '@/components/sections/Projects.astro';
 import Skills from '@/components/sections/Skills.astro';
 import KeyboardManager from '@/components/KeyboardManager.astro';
 import PrintButton from '@/components/PrintButton.astro';
+import Languages from '@/components/sections/Languages.astro';
 import { getCV } from '@/cv/utils';
 
 const currentLocale = 'en';
@@ -24,6 +25,7 @@ const { name, label } = cv.basics;
 		<Projects cv={cv} locale={currentLocale}></Projects>
 		<Skills locale={currentLocale}></Skills>
 		<PrintButton locale={currentLocale} />
+		<Languages cv={cv} locale={currentLocale}></Languages>
 	</main>
 	<KeyboardManager></KeyboardManager>
 </Layout>
