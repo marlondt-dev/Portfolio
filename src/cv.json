@@ -168,14 +168,14 @@
       ]
     },
     {
-      "name": "Nuxt.js",
+      "name": "Nuxt",
       "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
       ]
     },
     {
-      "name": "Vue.js",
+      "name": "Vue",
       "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "JavaScript Library", "UI"

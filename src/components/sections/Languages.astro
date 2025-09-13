@@ -1,0 +1,35 @@
+---
+import Section from "../Section.astro"
+import {getI18N } from '@/i18n/utils'
+import type {CV} from '@/types/cv'
+
+interface Props {
+    locale?: string,
+    cv: CV
+}
+
+const {cv, locale = 'es'}: Props = Astro.props
+const i18n = getI18N(locale)
+const {sections} = i18n
+const {languages} = cv
+
+---
+
+<Section title={i18n.sections.languages}>
+    {
+        languages.map(({language, fluency}) => {
+            return (
+                <li>
+                    <article>
+                        <header>
+                            <div>
+                                <h3>{language}</h3>
+                                <p>{fluency}</p>
+                            </div>
+                        </header>
+                    </article>
+                </li>
+            )
+        })  
+    } 
+</Section>

@@ -8,7 +8,9 @@ import Hero from '@/components/sections/Hero.astro';
 import Projects from '@/components/sections/Projects.astro';
 import Skills from '@/components/sections/Skills.astro';
 import KeyboardManager from '@/components/KeyboardManager.astro';
+import PrintButton from '@/components/PrintButton.astro';
 import { getCV } from '@/cv/utils';
+import Languages from '@/components/sections/Languages.astro';
 
 // const {name, label} = basics
 const currentLocale = Astro.currentLocale || 'es'
@@ -24,7 +26,9 @@ const {name, label} = basics
 		<Experience cv={cv} locale={currentLocale}></Experience>
 		<Education cv={cv} locale={currentLocale}></Education>
 		<Projects cv={cv} locale={currentLocale}></Projects>
-		<Skills cv={cv} locale={currentLocale}></Skills>
+		<Skills  locale={currentLocale}></Skills>
+		<PrintButton locale={currentLocale} />
+		<Languages  cv={cv} locale={currentLocale}></Languages>
 	</main>
 	<KeyboardManager></KeyboardManager>
 

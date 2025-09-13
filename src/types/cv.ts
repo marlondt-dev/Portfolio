@@ -48,10 +48,16 @@ export interface Skill {
   keywords: string[];
 }
 
+export interface Languages {
+  language: string,
+  fluency: string
+}
+
 export interface CV {
   basics: CVBasics;
   work: WorkExperience[];
   education: Education[];
   projects: Project[];
   skills: Skill[];
+  languages: Languages[]
 }
