@@ -1,0 +1,101 @@
+---
+import type { CV } from "@/types/cv";
+import { getI18N } from '@/i18n/utils';
+
+interface Props {
+  locale?: string;
+}
+
+const { locale = 'es' }: Props = Astro.props;
+const i18n = getI18N(locale);
+
+
+const buttonText = locale === 'en' ? 'Download CV' : 'Descargar CV';
+const printIcon = '📄';
+---
+
+<button 
+  id="print-cv" 
+  class="print-button"
+  title={buttonText}
+>
+  {printIcon}
+</button>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const printButton = document.getElementById('print-cv');
+    
+    printButton?.addEventListener('click', () => {
+      
+      const elementsToHide = [
+        '.print-button',
+        '.language-selector',
+        '.no-print',
+        '#print-cv'
+      ];
+      
+      elementsToHide.forEach(selector => {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach(el => {
+          (el as HTMLElement).style.display = 'none';
+        });
+      });
+      
+      
+      window.print();
+      
+     
+      setTimeout(() => {
+        elementsToHide.forEach(selector => {
+          const elements = document.querySelectorAll(selector);
+          elements.forEach(el => {
+            (el as HTMLElement).style.display = '';
+          });
+        });
+      }, 1000);
+    });
+  });
+</script>
+
+<style>
+  .print-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #999;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 100;
+    display: none; 
+  }
+
+  .print-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .print-button:active {
+    transform: translateY(0);
+  }
+
+  
+  @media (width <= 768px) {
+    .print-button {
+      display: block;
+    }
+  }
+
+ 
+  @media print {
+    .print-button {
+      display: none !important;
+    }
+  }
+</style>
