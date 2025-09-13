@@ -169,14 +169,14 @@
       ]
     },
     {
-      "name": "Nuxt.js",
+      "name": "NuxtJS",
       "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
       ]
     },
     {
-      "name": "Vue.js",
+      "name": "VueJS",
       "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
@@ -205,12 +205,12 @@
   ],
   "languages": [
     {
-      "language": "Spanish",
-      "fluency": "Native speaker"
+      "language": "Español",
+      "fluency": "Nativo"
     },
     {
-      "language": "English",
-      "fluency": "Advanced"
+      "language": "Inglés",
+      "fluency": "Avanzado"
     }
   ],
   "interests": [{
