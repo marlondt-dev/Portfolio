@@ -234,7 +234,13 @@
         "Nuxt.js, Sass, HTML and TypeScript",
         "Using the Twitch API"
       ],
-      "url": "https://my-twitch-clone-tide.vercel.app/"
+      "url": "https://my-twitch-clone-tide.vercel.app/",
+      "technologies": [
+        "NuxtJS",
+        "Sass",
+        "TypeScript",
+        "HTML"
+      ]
     },
     {
       "name": "Coffee Blog",
@@ -244,7 +250,11 @@
         "Only with HTML and CSS",
         "About us, courses and contact pages"
       ],
-      "url": "https://marlon-blogde-cafe.netlify.app"
+      "url": "https://marlon-blogde-cafe.netlify.app",
+      "technologies": [
+        "CSS",
+        "HTML"
+      ]
     }
   ]
 }
