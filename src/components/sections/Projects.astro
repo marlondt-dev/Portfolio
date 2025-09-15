@@ -1,7 +1,15 @@
 ---
+import typescript from 'icons/typescript.astro'
+import nuxt from 'icons/nuxt.astro'
+import Sass from 'icons/Sass.astro'
 import Section from "../Section.astro";
 import type {CV} from  '@/types/cv'
 import {getI18N } from '@/i18n/utils'
+import html from 'icons/html.astro'
+import css from 'icons/css.astro'
+
+
+
 
 interface Props {
   cv: CV,
@@ -12,12 +20,20 @@ const {cv, locale = 'es'}: Props = Astro.props
 const { projects } = cv
 const i18n = getI18N (locale)
 
+const TECH_ICONS: Record<string, any> = {
+  TypeScript: typescript,
+  NuxtJS: nuxt,
+  Sass,
+  HTML: html,
+  CSS: css
+}
+
 ---
 
 <Section title={i18n.sections.projects}>
   <ul>
     {
-      projects.map(({ name, url, description, highlights, isActive }) => {
+      projects.map(({ name, url, description, highlights, isActive, technologies }) => {
         return (
           <li>
             <article>
@@ -31,6 +47,20 @@ const i18n = getI18N (locale)
                 }
                 </h3>
                 <p>{description}</p>
+                <div>
+           <ul class="technologies">
+            {
+                               technologies &&  technologies.map((tech) => {
+                                    const Icon = TECH_ICONS[tech];
+                                    return (
+                                        <span class="tech-item">
+                                            {Icon && <Icon/>} 
+                                        </span>
+                                    )
+                                })
+                            }
+           </ul>
+                </div>
               </header>
               <footer>
                 
@@ -119,5 +149,9 @@ const i18n = getI18N (locale)
      article p {
       font-size: 0.7rem;
       line-height: 1.4em;
+     }
+
+     .technologies {
+      display: flex;
      }
 </style>

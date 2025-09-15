@@ -23,6 +23,7 @@ export interface Project {
   description: string;
   highlights: string[];
   isActive: boolean;
+  technologies: string[]
 }
 
 export interface WorkExperience {
