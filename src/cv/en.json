@@ -6,7 +6,7 @@
     "email": "marlon.dt@hotmail.com",
     "phone": "+34 667953850",
     "url": "https://midu.dev",
-    "summary": "Passionate web Developer and enthusiast of clean, user-friendly interfaces. I studied Web Application Development and have been enjoying building modern and functional digital experiences ever since. I have hands-on experience with HTML, CSS, JavaScript, TypeScript and modern frameworks, developing reusable components and focusing on pixel-perfect layouts. I love learning, experimenting, and taking on new challenges that help me grow as a developer.",
+"summary": "Web developer with a passion for great interfaces and attention to detail. I work with technologies like Vue, Nuxt, Astro, PHP, and TypeScript. Trained in Web Application Development, I've been enjoying creating digital experiences that combine design and functionality. Always seeking new challenges that push me to grow.",
     "location": {
       "address": "",
       "postalCode": "28400",
@@ -201,6 +201,9 @@
     },
     {
       "name": "PHP"
+    },
+     {
+      "name": "Gulp"
     }
   ],
   "languages": [
@@ -225,23 +228,23 @@
     "reference": "Reference…"
   }],
   "projects": [
-    {
-      "name": "Twitch Clone",
-      "isActive": true,
-      "description": "Clone of Twitch's live streaming page using the Twitch API",
-      "highlights": [
-        "Live streaming",
-        "Nuxt.js, Sass, HTML and TypeScript",
-        "Using the Twitch API"
-      ],
-      "url": "https://my-twitch-clone-tide.vercel.app/",
-      "technologies": [
-        "NuxtJS",
-        "Sass",
-        "TypeScript",
-        "HTML"
-      ]
-    },
+   {
+  "name": "Music Festival",
+  "isActive": true,
+  "description": "A website for a fictional music festival, with information about the artists, venue, and tickets.",
+  "highlights": [
+    "Fully responsive",
+    "JS for scroll management, image gallery loading, etc.",
+    "Gulp to automate tasks like minification of CSS and JS files"
+  ],
+  "url": "https://music-festival-eta.vercel.app",
+  "technologies": [
+    "Javascript",
+    "Sass",
+    "HTML",
+    "Gulp"
+  ]
+},
     {
       "name": "Coffee Blog",
       "isActive": true,

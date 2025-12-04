@@ -6,7 +6,7 @@
     "email": "marlon.dt@hotmail.com",
     "phone": "+34 667953850",
     "url": "",
-    "summary": "Apasionado del desarrolloweb y amante de las buenas interfaces. Me formé en Desarrollo de Aplicaciones Web y desde entonces disfruto creando experiencias digitales modernas y funcionales. Tengo experiencia trabajando con HTML, CSS, JavaScript, TypeScript y frameworks actuales, desarrollando componentes reutilizables y cuidando cada detalle de la maquetación. Me encanta aprender, experimentar y afrontar nuevos retos que me ayuden a crecer como desarrollador",
+    "summary": "Desarrollador web con pasión por las buenas interfaces y la atención al detalle. Utilizo tecnologías como con Vue, Nuxt, Astro, PHP y TypeScript. Me formé en Desarrollo de Aplicaciones Web y desde entonces he disfrutado creando experiencias digitales que combinan diseño y funcionalidad. Siempre buscando nuevos retos que me impulsen a crecer.",
     "location": {
       "address": "",
       "postalCode": "28400",
@@ -226,20 +226,20 @@
   }],
   "projects": [
     {
-      "name": "Clon de Twitch",
+      "name": "Festival de música",
       "isActive": true,
-      "description": "Clon de la página de streamings en directo de Twitch usando la api de Twitch ",
+      "description": "Una página web para un festival de música ficticio, con información sobre los artistas, el lugar y las entradas",
       "highlights": [
-        "Streamings en directo",
-        "Nuxt.js, Sass, HTML y TypeScript",
-        "Utilizando la Api de Twitch"
+        "Totalmente responsive",
+        "JS para gestión del scroll, carga de galeria de imágenes, etc",
+        "Gulp para automatizar tareas como la minificación de archivos CSS y JS"
       ],
-      "url": "https://my-twitch-clone-tide.vercel.app/",
+      "url": "https://music-festival-eta.vercel.app",
       "technologies": [
-        "NuxtJS",
+        "Javascript",
         "Sass",
-        "TypeScript",
-        "HTML"
+        "HTML",
+        "Gulp"
       ]
     },
     {
